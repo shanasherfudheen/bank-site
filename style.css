@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* || HEADER */
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#header__logo {
+  width: 420px;
+  padding: 20px 10px;
+  display: flex;
+  gap: 1rem;
+}
+
+.header__logo-text {
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+#header__logo-text-mal {
+  font-size: 1.375rem;
+}
+
+#header__logo-text-eng {
+  font-size: 1.75rem;
+}
+
+#header__logo-text-title {
+  font-size: 0.528rem;
+  font-weight: 500;
+}
+
+.header__links__ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.header__links__ul li a:any-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.header__cta {
+  font-size: small;
+  font-weight: 600;
+}
+
+.header__cta a {
+  text-decoration: none;
+}
+
+/* || NAVBAR */
+
+.main-nav {
+  background-color: #edf6f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar {
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+.menu-item {
+  position: relative;
+  color: #212529;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.menu-item:hover .mega-menu {
+  display: flex;
+}
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 600px;
+  background: white;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  padding: 15px;
+  gap: 20px;
+}
+.mega-menu .column {
+  flex: 1;
+}
+.mega-menu a {
+  display: block;
+  padding: 5px 0;
+  color: #333;
+  text-decoration: none;
+}
+.mega-menu a:hover {
+  color: #007bff;
+}
+
+#login {
+  background-color: #40916c;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("images/search.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
